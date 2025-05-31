@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 18, 84, 0.6); 
+    color: white;
+    padding: 20px 0;
+    z-index: 1000; 
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('gambarnavbar.png') no-repeat center center/cover;
+    height: 600px;
+    position: relative;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+.vision {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.vision h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vision p {
+    font-size: 16px;
+}
+.vision-mission {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.vision-mission-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+    gap: 40px;
+}
+
+.vision-text {
+    flex: 1 1 55%;
+}
+
+.vision-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.vision-text h3 {
+    font-size: 24px;
+    margin: 30px 0 15px;
+    color: #000;
+}
+
+.vision-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.mission-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #004aad;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.vision-logo {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.vision-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.vision-logo h4 {
+    font-size: 20px;
+    color: #003366;
+    font-weight: bold;
+}
+.services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 50px 50px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+.gallery {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gallery-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.location {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  padding: 5px 0;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active {
+  transform: scale(1.1); /* efek membesar */
+  font-weight: bold;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 0, 0);
+}
+
+
+
+
+
